@@ -14,7 +14,7 @@ Here is Shell Script To Setup a VNC(Virtual Network Computing) On a Debian based
 
 5. chmod +x VNCSETUP.sh
 
-6. ./VNCSETUP..sh
+6. ./VNCSETUP.sh
 
 ```
 
