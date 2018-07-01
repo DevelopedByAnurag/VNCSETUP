@@ -20,7 +20,7 @@ echo -e "=======================================================================
 echo -e "                             Installing VNC on VPS"
  echo -e "============================================================================================================================="
 
-apt-get update -y && sudo apt-get upgrade -y
+
 echo -e "\nDo you want to install VNC?"
 echo -e "\n 1. Yes, Install Graphical VNC"
 echo -e "\n 2. No, I changed my Mood Exit Script"
@@ -32,7 +32,7 @@ do
 		echo -e "============================================================================================================================="
 		echo -e "                             Installing GRAPHICAL VNC (tightvncserver) "
   		echo -e "============================================================================================================================="
-		sudo apt-get update -y
+		apt-get update -y && sudo apt-get upgrade -y
 		sudo apt-get install xfce4 xfce4-goodies tightvncserver -y --allow-unauthenticated
 		vncserver
 		vncserver -kill :1
