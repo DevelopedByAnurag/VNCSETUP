@@ -33,13 +33,15 @@ do
 		echo -e "                             Installing GRAPHICAL VNC (tightvncserver) "
   		echo -e "============================================================================================================================="
 		apt-get update -y && sudo apt-get upgrade -y
-		sudo apt-get install xfce4 xfce4-goodies tightvncserver -y --allow-unauthenticated
+		sudo apt-get install xfce4 xfce4-goodies xorg lxde-core tightvncserver -y --allow-unauthenticated
 		vncserver
 		vncserver -kill :1
 		mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
 		echo "#!/bin/bash
 		xrdb $HOME/.Xresources
-		startxfce4 &" >> ~/.vnc/xstartup
+		startxfce4 &
+		lxterminal &
+		/usr/bin/lxsession -s LXDE &" >> ~/.vnc/xstartup
 		sudo chmod +x ~/.vnc/xstartup
 		echo "#!/bin/bash
 		PATH="$PATH:/usr/bin/"
