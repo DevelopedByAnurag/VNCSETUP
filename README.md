@@ -1,7 +1,7 @@
 # VNCSETUP
 Here is Shell Script To Setup a VNC(Virtual Network Computing) On a Debian based OS  That includes Ubuntu and other debian based OS.
 
-## Steps To Install Script and 
+## Steps To Install Script
 
 ```
 1. sudo apt-get update
