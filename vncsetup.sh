@@ -52,15 +52,13 @@ do
 		OPTIONS="-depth ${DEPTH} -geometry ${GEOMETRY} :${DISPLAY} -localhost"
 		. /lib/lsb/init-functions" >> /etc/init.d/vncserver
 		sudo chmod +x /etc/init.d/vncserver
-		rm /etc/hostname
-		echo "Parrot OS" >> /etc/hostname
 		vncserver
 		su
 		clear
 		echo -e "============================================================================================================================="
 		myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 		echo "Connect it!!! Using :-  ${myip}:1 in VNC Viewer"
-  echo -e "============================================================================================================================="
+  		echo -e "============================================================================================================================="
 		break
 		;;
 
