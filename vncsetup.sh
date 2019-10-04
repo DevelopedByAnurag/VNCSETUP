@@ -13,8 +13,8 @@ echo -e "  ${GREEN}╚████╔╝  ██║ ╚████║ ╚██
 echo -e "   ╚═══╝   ╚═╝  ╚═══╝  ╚═════╝ ╚══════╝ ╚══════╝    ╚═╝     ╚═════╝  ╚═╝"
    
 printf "${WHITE}"
-echo -e "-------------------------------------------Contributer :- Anurag Batra -------------------------------------------"
-echo -e "---------------------------${ORANGE} Hindustani ${WHITE} Tech ${GREEN} Solutions ${WHITE}-------------------------------"
+echo -e "-------------------------------------------Coded By :- Anurag Batra -------------------------------------------"
+echo -e "---------------------------${ORANGE} Proudly ${WHITE} An ${GREEN} Indian ${WHITE}-------------------------------"
 echo -e "                          Kindly Read Note First by typing note                          "
 echo -e "============================================================================================================================="
 echo -e "                             Installing VNC on VPS"
@@ -57,17 +57,17 @@ do
 		clear
 		echo -e "============================================================================================================================="
 		myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
-		echo "Connect it!!! Using :-  ${myip}:1 in VNC Viewer"
+		echo "Connect it!!! Using :-  ${myip}:1 in VNC Viewer."
   		echo -e "============================================================================================================================="
 		break
 		;;
 
 	2)
   echo -e "============================================================================================================================="
-		echo -e"Okay your Wish VNC not installed"
-  echo -e "Its sad to see you you going"
+  echo -e " Okay your Wish VNC not installed."
+  echo -e " Its sad to see you you going."
   echo -e "============================================================================================================================="
-		break
-		;;
+break
+;;
  esac
 done
